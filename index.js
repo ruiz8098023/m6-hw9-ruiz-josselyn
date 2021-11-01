@@ -47,16 +47,16 @@ function showWeather(weather) {
 
         // WEATHER ICON
         var img = document.createElement('img')
-        img.src = weather.weather.icon
+        img.src = "http://openweathermap.org/img/wn/" + weather.weather[0].icon + "@2x.png"
         container.appendChild(img)
 
         // TEMPERATURE IS...
         var temp = document.createElement('h3')
-        temp.textContent = weather.main.temp  + "degrees Fahrenheit"
+        temp.textContent = weather.main.temp  + " degrees Fahrenheit"
         container.appendChild(temp)
 
         // TEMPERATURE FEELS LIKE
         var tempFeels = document.createElement('h3')
-        tempFeels.textContent = "Feels Like " + weather.main.feels_like + "degrees Fahrenheit"
+        tempFeels.textContent = "Feels Like " + weather.main.feels_like + " degrees Fahrenheit"
         container.appendChild(tempFeels)
 }
