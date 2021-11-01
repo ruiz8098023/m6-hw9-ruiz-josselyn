@@ -18,9 +18,14 @@ div {
 
 form {
     padding: 15px 0;
-    margin: 50px;
+    margin: 0 40%;
     display: flex;
     flex-direction: column;
+}
+
+form input {
+    border-radius: 5px;
+    padding: 10px 30px;
 }
 
 form button {
